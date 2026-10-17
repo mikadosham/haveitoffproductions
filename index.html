@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Have It Off Productions</title>
+  <meta name="description" content="Have It Off Productions. Join the list to hear about the next event first.">
+  <meta property="og:title" content="Have It Off Productions">
+  <meta property="og:description" content="Join the list to hear about the next event first.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#0b0b0c">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230b0b0c'/><text x='50' y='68' font-size='52' font-family='Arial Black,Arial' font-weight='900' text-anchor='middle' fill='%23ff3d2e'>HO</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0b0b0c;
+      --fg: #f5f2ea;
+      --muted: #a8a49b;
+      --accent: #ff3d2e;
+      --card: #151517;
+      --line: #2a2a2d;
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; }
+    body {
+      background: var(--bg);
+      color: var(--fg);
+      font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+      line-height: 1.5;
+      min-height: 100vh;
+      min-height: 100dvh;
+      display: flex;
+      flex-direction: column;
+      -webkit-font-smoothing: antialiased;
+    }
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      background:
+        radial-gradient(60rem 30rem at 85% -10%, rgba(255, 61, 46, 0.22), transparent 60%),
+        radial-gradient(40rem 25rem at -10% 110%, rgba(255, 61, 46, 0.12), transparent 60%);
+      pointer-events: none;
+      z-index: -1;
+    }
+    .wrap {
+      width: 100%;
+      max-width: 560px;
+      margin: 0 auto;
+      padding: 40px 20px 24px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+    .eyebrow {
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin: 0 0 14px;
+    }
+    h1 {
+      font-family: Anton, Impact, "Arial Narrow Bold", sans-serif;
+      font-weight: 400;
+      text-transform: uppercase;
+      font-size: clamp(56px, 17vw, 96px);
+      line-height: 0.9;
+      letter-spacing: 0.01em;
+      margin: 0;
+    }
+    h1 span { color: var(--accent); }
+    .sub {
+      font-family: Anton, Impact, sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 0.32em;
+      font-size: 15px;
+      color: var(--muted);
+      margin: 10px 0 28px;
+    }
+    .lede {
+      font-size: 17px;
+      color: var(--fg);
+      margin: 0 0 24px;
+      max-width: 34ch;
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 22px 18px;
+    }
+    .card h2 {
+      font-size: 20px;
+      font-weight: 600;
+      margin: 0 0 4px;
+    }
+    .card p {
+      margin: 0 0 14px;
+      color: var(--muted);
+      font-size: 15px;
+    }
+    /* Keep the embedded signup form readable on the dark card */
+    .form-slot {
+      background: #fff;
+      color: #111;
+      border-radius: 12px;
+      overflow: hidden;
+      min-height: 120px;
+    }
+    .form-slot .inline-container,
+    .form-slot [class*="emailoctopus"] { max-width: 100% !important; }
+    /* The card already has a heading; hide the form's template title and blurb */
+    .form-slot h1,
+    .form-slot .text-block { display: none !important; }
+    .form-slot button[type="submit"],
+    .form-slot input[type="submit"] {
+      background: var(--accent) !important;
+      border-color: var(--accent) !important;
+      color: #fff !important;
+      font-weight: 600 !important;
+    }
+    footer {
+      text-align: center;
+      font-size: 13px;
+      color: var(--muted);
+      padding: 28px 20px 32px;
+    }
+    footer a { color: var(--muted); }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <p class="eyebrow">You found us</p>
+    <h1>Have It <span>Off</span></h1>
+    <p class="sub">Productions</p>
+    <p class="lede">Get on the list and be the first to hear about the next event.</p>
+
+    <section class="card" aria-labelledby="signup-title">
+      <h2 id="signup-title">Join the list</h2>
+      <p>Takes ten seconds. No spam.</p>
+      <div class="form-slot">
+        <script async src="https://eomail5.com/form/495a525e-ca66-11f1-ac9b-3783faf29a95.js" data-form="495a525e-ca66-11f1-ac9b-3783faf29a95"></script>
+      </div>
+    </section>
+  </main>
+  <footer>&copy; <span id="y">2026</span> Have It Off Productions</footer>
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
