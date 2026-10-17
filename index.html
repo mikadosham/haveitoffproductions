@@ -122,6 +122,20 @@
       color: #fff !important;
       font-weight: 600 !important;
     }
+    .tickets {
+      display: block;
+      margin-top: 16px;
+      padding: 16px;
+      text-align: center;
+      border: 1px solid var(--fg);
+      border-radius: 12px;
+      color: var(--fg);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 16px;
+      letter-spacing: 0.02em;
+    }
+    .tickets:hover, .tickets:focus-visible { background: var(--fg); color: var(--bg); }
     footer {
       text-align: center;
       font-size: 13px;
@@ -145,6 +159,8 @@
         <script async src="https://eomail5.com/form/495a525e-ca66-11f1-ac9b-3783faf29a95.js" data-form="495a525e-ca66-11f1-ac9b-3783faf29a95"></script>
       </div>
     </section>
+
+    <a class="tickets" href="https://have-it-off.tickit.ca/" target="_blank" rel="noopener">Get tickets &rarr;</a>
   </main>
   <footer>&copy; <span id="y">2026</span> Have It Off Productions</footer>
   <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
